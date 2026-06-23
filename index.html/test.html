@@ -1,61 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Portfolio</title>
-</head>
-<body>
+    <title>Doner Information</title>
+    <link rel="stylesheet" href="form.css">
 
+</head>
+
+<body>
+    <h2>Doner Information</h2>
     <fieldset>
-        <legend>Profile & Bio</legend>
+        <legend>Information</legend>
         <table>
-            <tr>
-                <td><label>Profile Picture:</label></td>
-                <td>
-                    <img src="/Portfolio/profile.jpg" alt="Profile Picture" width="130px" height="130px" style="border-radius: 50%; border: 2px solid #000;">
-                </td>
-            </tr>
-            <tr>
-                <td><label>Full Name:</label></td>
-                <td><b>Rabeya Bashri Sadia</b></td>
-            </tr>
-            <tr>
-                <td><label>Job Title:</label></td>
-                <td>Computer Science & Engineering Student</td>
-            </tr>
-            <tr>
-                <td><label>Address:</label></td>
-                <td><address>Bashundhara R/A, Road-11, Block C, Dhaka</address></td>
-            </tr>
-            <tr>
-                <td style="vertical-align: top;"><label>Bio & Skills:</label></td>
-                <td>
-                    <p>Undergraduate CSE student at AIUB. Passionate about research, software simulations, explainable AI, and web development.</p>
-                    <p><b>Technical Skills:</b> Proficient in Java Programming, C# Desktop Applications, SQL & Oracle Database Management, and Frontend Web Development (HTML5, CSS3). Experienced in research methodology and multimodal data analysis.</p>
-                    <p><b>Open Source Contribution:</b> Check out my technical projects and repositories on my official <a href="https://github.com/RabeyaBashriSadia" target="_blank" style="text-decoration: none; color: #0066cc; font-weight: bold;">GitHub Profile</a>.</p>
-                </td>
-            </tr>
+            <div>
+                <tr>
+                    <td class="Row">First Name<span class="required">*</span></td>
+                    <td><input type="text" name="" id="" required></td>
+                </tr>
+                <br>
+                <tr>
+                    <td class="Row">Last Name<span class="required">*</span></td>
+                    <td><input type="text" name="" id="" required></td>
+                </tr>
+
+                <tr>
+                    <td class="Row">Company</td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+
+                <tr>
+                    <td class="Row">Address1 <span class="required">*</span></td>
+                    <td><input type="text" name="" id="" required></td>
+                </tr>
+
+                <tr>
+                    <td class="Row">Address2</td>
+                    <td><input type="text" name="" id="" required></td>
+                </tr>
+
+                <tr>
+                    <td class="Row">City <span class="required">*</span></td>
+                    <td><input type="text" name="" id="" required></td>
+                </tr>
+
+                <tr>
+                    <td class="Row">State <span class="required">*</span></td>
+                    <td><select name="" id="" required>
+                            <option value="">Select a state</option>
+                            <option value="">Dhaka</option>
+                            <option value="">Chottogram</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td class="Row">Zip code <span class="required">*</span></td>
+                    <td><input type="text" name="" id="" required></td>
+                </tr>
+                <tr>
+                    <td class="Row">Country <span class="required">*</span></td>
+                    <td><select name="" id="" class="selector">
+                            <option value="Select a country">Select a country</option>
+                            <option value="">Bangladesh</option>
+                            <option value="">India</option>
+                            <option value="">China</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td class="Row">Phone</td>
+                    <td><input type="tel" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td class="Row">
+                        Fax
+                    </td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td class="Row">
+                        Email <span class="required">*</span>
+                    </td>
+                    <td><input type="email" name="" id=""></td>
+
+                </tr>
+                <tr>
+                    <td class="Row">Donation Amount <span class="required">*</span><br> <small>(Check a button or type
+                            in your
+                            amount)</small></td>
+                    <td>
+                        <small>
+                            <input type="radio" name="money" id="">None<input type="radio" name="money" id="">$50
+                            <input type="radio" name="money" id="">$75
+                            <input type="radio" name="money" id="">$100
+                            <input type="radio" name="money" id="">$250
+                            <input type="radio" name="money" id="">Other
+                        </small> <br>
+
+                        <span><b>Other Amount $ <input type="text" name="" id=""></b></span>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td class="Row">Recurring Donation <br><small>(Check if yes)</small></td>
+                    <td><input type="checkbox" name="" id="">I am interested in giving on a regular basis. <br>
+                        Monthly Credit card $ <input class="box" type="text" name="" id=""> For <input class="box"
+                            type="tel" name="" id="">Months
+                    </td>
+                </tr>
+
+            </div>
         </table>
+
     </fieldset>
 
-    <br>
 
-    <fieldset>
-        <legend>Technical Skills</legend>
-        <table border="0" cellpadding="6" cellspacing="0">
-            <tr>
-                <td style="width: 30px; text-align: center;">
-                    <img src="https://cdn-icons-png.flaticon.com/512/226/226773.png" alt="Java Logo" width="20px" height="20px">
-                </td>
-                <td><b>Java Programming</b></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;">
-                    <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" alt="C# Logo" width="20px" height="20px">
-                </td>
-                <td><b>C# (#C) Desktop Applications</b></td>
-            </tr>
-            <tr>
-                <td style="text-align: center;">
-                    <img src="https://cdn-icons-png.flaticon.
+</body>
+
+</html>
