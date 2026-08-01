@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Your Account</title>
+</head>
+<body>
+
+    <fieldset>
+      <legend>Create Your Account</legend>
+      
+      <h2>Create your account</h2>
+      <p>Join us in a couple of steps.</p>
+      <hr>
+
+      <table>
+        
+        <tr>
+          <td><label for="fullname">Full name</label></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required></td>
+        </tr>
+        
+        <tr>
+          <td><label for="age">Age</label></td>
+        </tr>
+        <tr>
+          <td><input type="number" id="age" name="age" placeholder="28"></td>
+        </tr>
+        
+        <tr>
+          <td><label for="dob">Date of birth</label></td>
+        </tr>
+        <tr>
+          <td><input type="date" id="dob" name="dob"></td>
+        </tr>
+        
+        <tr>
+          <td><label for="email">Email address</label></td>
+        </tr>
+        <tr>
+          <td><input type="email" id="acc-email" name="acc-email" placeholder="jane@example.com" required></td>
+        </tr>
+        
+        <tr>
+          <td><label for="acc-password">Password</label></td>
+        </tr>
+        <tr>
+          <td><input type="password" id="acc-password" name="acc-password" placeholder="********" required></td>
+        </tr>
+        
+        <tr>
+          <td><label>Preferred contact</label></td>
+        </tr>
+        <tr>
+          <td>
+            <label><input type="radio" id="email" name="contact" value="email" checked> Email</label>
+            <label><input type="radio" id="phone" name="contact" value="phone"> Phone</label>
+            <label><input type="radio" id="sms" name="contact" value="sms"> SMS</label>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </td>
+        </tr>
+
+      </table>
+    </fieldset>
+</body>
+</html>
