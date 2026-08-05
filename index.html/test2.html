@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+<body>
+
+    <fieldset>
+      <legend>Registration Form</legend>
+
+      <h1>Registration</h1>
+      <p>Please complete all fields below.</p>
+
+      <table>
+        
+        <tr>
+          <td><label for="fullName">Full Name</label></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="fullName" name="fullName" placeholder="Jane Doe" required></td>
+        </tr>
+        
+        <tr>
+          <td><label for="postalCode">Postal Code</label></td>
+        </tr>
+        <tr>
+          <td><input type="number" id="postalCode" name="postalCode" placeholder="10001"></td>
+        </tr>
+        
+        <tr>
+          <td><label for="dob">Date of Birth</label></td>
+        </tr>
+        <tr>
+          <td><input type="date" id="dob" name="dob"></td>
+        </tr>
+        
+        <tr>
+          <td><label for="email">Email Address</label></td>
+        </tr>
+        <tr>
+          <td><input type="email" id="email" name="email" placeholder="jane@example.com" required></td>
+        </tr>
+        
+        <tr>
+          <td><label for="password">Password</label></td>
+        </tr>
+        <tr>
+          <td><input type="password" id="password" name="password" placeholder="********" required></td>
+        </tr>
+        
+        <tr>
+          <td><label for="country">Country</label></td>
+        </tr>
+        <tr>
+          <td>
+            <select id="country" name="country" required>
+              <option value="">Select a country...</option>
+              <option value="bd">Bangladesh</option>
+              <option value="us">United States</option>
+              <option value="uk">United Kingdom</option>
+            </select>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </td>
+        </tr>
+
+      </table>
+    </fieldset>
+
+</body>
+</html>
